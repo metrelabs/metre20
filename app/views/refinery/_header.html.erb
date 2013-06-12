@@ -1,0 +1,23 @@
+
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <h1 id='logo'>
+      <%= link_to Refinery::Core.site_name, refinery.root_path, :class => 'brand' %>
+    </h1>
+
+      <%= render(:partial => "/refinery/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
