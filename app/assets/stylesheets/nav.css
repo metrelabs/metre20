@@ -1,0 +1,12 @@
+
+.header-container {padding-left:0;padding-right:0;}
+
+.navbar-inner {border:transparent;padding-top:-0px;padding-bottom:10px;
+							 background-color:transparent !important;background-image:none !important;
+							 box-shadow: none;margin-top:-70px;}
+.navbar-inverse .nav > li > a {color:#ceebef;}
+.nav-collapse {margin-top:10px!important;}
+.collapse {margin-top:10px!important;background-color:#000000;}
+.navbar-inverse .btn-navbar {margin-top:20px;margin-bottom:12px;}
+.brand {background:url('brand-sprites.png') 0 -353px no-repeat;width:190px;height:21px;padding:none;margin-top:4px;}
+h1#logo {text-indent:-9999px;}
