@@ -25,17 +25,20 @@ body {padding-right:0 !important;padding-left:0 !important;}
 
 /* Large desktop */
 @media (min-width: 1200px) {
+
 	#top {height:70px;}
  }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 979px) {
+
 	#top {height:70px;}
 	.brand {margin-top:6px !important;}
  }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
+	#page.container {padding-left:10px;padding-right:10px;}
 	#top {min-height:70px;}
 	.brand {margin-top:6px !important;}
  }

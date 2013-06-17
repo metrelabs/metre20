@@ -3,8 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <%= render '/refinery/head' %>
-  <% if @page.background_image.present? %>
-      
+
+  <% if @page.background_image.present? %>    
     <style type="text/css">
       body {
         background: url(<%= @page.background_image.url -%>) no-repeat center center fixed;
@@ -14,24 +14,15 @@
           background-size: cover;
         }
     </style>
-    
   <% end %>
-
-
 
   <body>
 
-   
-
-
-
-    
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div id="page_container">
 
       <div id="top"></div>
-
 
       <div class="container-fluid">
         <header id="header" >
@@ -40,12 +31,12 @@
       </div>
 
 
-      <section id="page">
+      <section id="page" class="container">
         <%= yield %>
       </section>
 
 
-      <footer>
+      <footer class="container">
         <%= render '/refinery/footer' -%>
       </footer>
 
