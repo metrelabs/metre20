@@ -32,17 +32,25 @@
       </div>
 
 
-      <section id="page" class="container">
+      <section id="page" class="container" style="padding-bottom:100px;">
         <%= yield %>
       </section>
 
+      
 
-      <footer class="container">
-        <%= render '/refinery/footer' -%>
-      </footer>
+        <footer>
+          
+                    <%= render '/refinery/footer' -%>
+          
+        </footer>
+      
+     
 
+      
 
     </div><!-- page_container -->
+
+    
 
 
     <%= render '/refinery/javascripts' %>
