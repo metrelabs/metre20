@@ -6,7 +6,7 @@ Refinery::Pages.configure do |config|
   # end
 
   # Configure global page default parts
-  config.default_parts = ["Body", "Side Body", "Home Lead Text", "Home Headline"]
+  config.default_parts = ["Body", "Side Body", "Home Lead Text", "Home Headline", "L2 Headline", "L2 Lead Text"]
 
   # Configure whether to allow adding new page parts
   config.new_page_parts = true

@@ -1,9 +1,10 @@
-<%# if @page.white_text == true %>
-	<%# color = 'white_text' %>
-<%# end %>
 
-<div class="home <%= color %>"><%= raw @page.content_for(:home_headline) %></div>
-<div class="home lead offset2 span8 <%= color %>"><%= raw @page.content_for(:home_lead_text) %></div>
+<div class="home <%= color %>">
+	<%= raw @page.content_for(:home_headline) %>
+</div>
+<div class="home lead offset2 span8 <%= color %>">
+	<%= raw @page.content_for(:home_lead_text) %>
+</div>
 
 <%#= raw @page.content_for(:body) %>
 <%#= render '/refinery/content_page' %>
