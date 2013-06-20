@@ -19,12 +19,29 @@
   }
   %>
 </div>
+<div class="row">
+  <div class="span4">
+    <div class="field">
+      <%= f.label :white_text %>
+      <%= f.check_box :white_text %>
+    </div>
+  </div>
+  <div class="span4">
+    <div class="field">
+      <%= f.label :span_class %>
+      <%= f.text_field :span_class %>
 
-  <div class="field">
-    <%= f.label :white_text %>
-    <%= f.check_box :white_text %>
+    </div>
+  </div>
+  <div class="span4">
+    <div class="field">
+      <%= f.label :offset_value %>
+      <%= f.text_field :offset_value %>
+
+    </div>
 
   </div>
+</div>
 
   <%= render 'form_fields_after_title', :f => f %>
 
