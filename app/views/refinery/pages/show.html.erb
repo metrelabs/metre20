@@ -5,4 +5,14 @@
   <%= raw @page.content_for(:l2_lead_text) %>
 </div>
 
+<div class="row">
+	<div class="l2 <%= color %> span4">
+	  <%= raw @page.content_for(:column_1) %>
+	</div>
+
+	<div class="l2 <%= color %> span4">
+	  <%= raw @page.content_for(:column_2) %>
+	</div>
+</div>
+
 <%#= render '/refinery/content_page' %>
