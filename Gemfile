@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'pg'
 gem 'twitter-bootstrap-rails'
+gem 'refinerycms-menus', '~> 2.0.7'
 
 group :production do
 	gem 'fog'
