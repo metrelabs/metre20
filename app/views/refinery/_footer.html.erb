@@ -23,10 +23,19 @@
 
 			</div>
 
-			<div class="container" id="social-section">
-<%= render :partial => '/refinery/menu', :locals => { 
-:roots => refinery_menu('social'),
-:dom_id => 'stuff' } %>
+			<div class="container" id="social-section" style="border-top:1px solid #121212;">
+<div class="row">
+	<div class="span5" style="margin-top:20px;">
+		<blockquote><p>That Vine thing? It's happening. How Fashion Brands Are Using Vine http://on.mash.to/17tTc0x  via @mashable</p></blockquote>
+
+	</div>
+	<div class="span6 pull-right"><%= render :partial => '/refinery/menu', :locals => { 
+	:roots => refinery_menu('social'),
+	:dom_id => 'stuff' } %>
+  </div>
+
+
+</div>
 
 </div>
 
