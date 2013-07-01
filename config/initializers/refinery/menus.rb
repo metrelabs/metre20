@@ -14,5 +14,6 @@ Refinery::Menus.configure do |config|
   # title_attr: attribute name (or method name) on resource to be shown as its title
   # admin_page_filter: hash of conditions to be used for filtering objects shown to be add-able via menu edit page
   
-  # config.default_menus = {:refinery_page=>{:klass=>"Refinery::Page", :title_attr=>"title", :scope=>#<Proc:0x007fd53a2f1ce8@/Users/ceinterone17/.rvm/gems/ruby-1.9.3-p392@metre20/gems/refinerycms-menus-2.0.7/lib/refinery/menus/configuration.rb:19>}, :refinery_resource=>{:klass=>"Refinery::Resource", :title_attr=>"file_name"}} 
+  # config.default_menus = {:refinery_page=>{:klass=>"Refinery::Page", :title_attr=>"title", :scope=>#<Proc:0x007fd53a2f1ce8@/Users/ceinterone17/.rvm/gems/ruby-1.9.3-p392@metre20/gems/refinerycms-menus-2.0.7/lib/refinery/menus/configuration.rb:19>}, :refinery_resource=>{:klass=>"Refinery::Resource", :title_attr=>"file_name"}}
+  
 end

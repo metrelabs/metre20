@@ -21,7 +21,7 @@ body {padding-right:0 !important;padding-left:0 !important;}
 
 
 h1, h2, h3 {color:#000000;font-family:'Open Sans Condensed', sans-serif !important;font-weight:100 !important;}
-.home h1 {font-size:124px;font-family: 'Open Sans Condensed', sans-serif !important;text-transform: uppercase !important;text-align:center;line-height:2.5em;}
+.home h1 {font-size:100px;font-family: 'Open Sans Condensed', sans-serif !important;text-transform: uppercase !important;text-align:center;line-height:1em;margin-bottom:1em;margin-top:1em;}
 .home.lead {color:#000000;}
 .white_text {color:#ffffff !important;}
 .l2 h1 {font-size:72px;line-height: 2em;}
