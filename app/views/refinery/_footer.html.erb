@@ -1,0 +1,10 @@
+<p>
+  <%= t('.copyright', :year => Time.now.year,
+                      :site_name => Refinery::Core.site_name) %>
+</p>
+
+<%= render :partial => '/refinery/menu', :locals => { 
+           :roots => refinery_menu('footer_menu') } %>
+
+<%= render :partial => '/refinery/menu', :locals => { 
+:roots => refinery_menu('social') } %>
