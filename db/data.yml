@@ -1,0 +1,1929 @@
+
+---
+refinery_roles_users:
+  columns:
+  - user_id
+  - role_id
+  records: 
+  - - '1'
+    - '1'
+  - - '1'
+    - '2'
+
+---
+refinery_roles:
+  columns:
+  - id
+  - title
+  records: 
+  - - '1'
+    - Refinery
+  - - '2'
+    - Superuser
+
+---
+refinery_user_plugins:
+  columns:
+  - id
+  - user_id
+  - name
+  - position
+  records: 
+  - - '22'
+    - '1'
+    - refinery_users
+    - '0'
+  - - '23'
+    - '1'
+    - refinery_dashboard
+    - '1'
+  - - '24'
+    - '1'
+    - refinery_images
+    - '2'
+  - - '25'
+    - '1'
+    - refinery_files
+    - '3'
+  - - '26'
+    - '1'
+    - refinery_pages
+    - '4'
+  - - '27'
+    - '1'
+    - refinery_settings
+    - '5'
+  - - '28'
+    - '1'
+    - refinerycms_blog
+    - '6'
+  - - '29'
+    - '1'
+    - refinerycms_inquiries
+    - '7'
+  - - '30'
+    - '1'
+    - refinery_core
+    - '8'
+  - - '31'
+    - '1'
+    - refinery_dialogs
+    - '9'
+  - - '32'
+    - '1'
+    - refinery_i18n
+    - '10'
+  - - '33'
+    - '1'
+    - page_images
+    - '11'
+  - - '34'
+    - '1'
+    - refinery_inquiries
+    - '12'
+  - - '35'
+    - '1'
+    - refinery_menus
+    - '13'
+
+---
+refinery_users:
+  columns:
+  - id
+  - username
+  - email
+  - encrypted_password
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - sign_in_count
+  - remember_created_at
+  - reset_password_token
+  - reset_password_sent_at
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - carlos@metreagency.com
+    - carlos@metreagency.com
+    - $2a$10$AbjwHTzi0MmjAMc.MLdaCe7XdZehnbDxHFSiMr.BVZ/aZGDVqrVQG
+    - '2013-06-28 21:29:03.534138'
+    - '2013-06-28 19:38:03.902419'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '13'
+    - 
+    - 
+    - 
+    - '2013-06-10 16:10:05.163603'
+    - '2013-06-28 21:29:03.535093'
+
+---
+refinery_page_parts:
+  columns:
+  - id
+  - refinery_page_id
+  - title
+  - body
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - '1'
+    - Body
+    - <p>This is cool.</p>
+    - '2'
+    - '2013-06-10 16:13:37.40055'
+    - '2013-06-19 02:33:44.71378'
+  - - '2'
+    - '1'
+    - Side Body
+    - <p>This is another block of content over here.</p>
+    - '3'
+    - '2013-06-10 16:13:37.527089'
+    - '2013-06-19 02:33:44.71797'
+  - - '3'
+    - '2'
+    - Body
+    - <h2>Sorry, there was a problem...</h2><p>The page you requested was not found.</p><p><a
+      href='/'>Return to the home page</a></p>
+    - '0'
+    - '2013-06-10 16:13:37.628338'
+    - '2013-06-10 16:13:37.628338'
+  - - '4'
+    - '3'
+    - Body
+    - ! "<p>This is just a standard text page example. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet
+      nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis
+      metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris.
+      Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus
+      consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero
+      hendrerit dapibus.\r\n\r\nInteger interdum purus id erat. Duis nec velit vitae
+      dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia
+      nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla
+      semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis
+      orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed
+      nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum
+      imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>"
+    - '0'
+    - '2013-06-10 16:13:37.764611'
+    - '2013-07-01 14:03:36.497326'
+  - - '5'
+    - '3'
+    - Side Body
+    - <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla
+      nisi a elit. Duis ultricies orci ut arcu. Ut ac nibh. Duis blandit rhoncus magna.
+      Pellentesque semper risus ut magna. Etiam pulvinar tellus eget diam. Morbi blandit.
+      Donec pulvinar mauris at ligula. Sed pellentesque, ipsum id congue molestie,
+      lectus risus egestas pede, ac viverra diam lacus ac urna. Aenean elit.</p>
+    - '1'
+    - '2013-06-10 16:13:37.774152'
+    - '2013-07-01 14:03:36.554666'
+  - - '6'
+    - '4'
+    - Body
+    - 
+    - 
+    - '2013-06-10 16:13:38.848484'
+    - '2013-06-10 16:13:38.848484'
+  - - '7'
+    - '4'
+    - Side Body
+    - 
+    - 
+    - '2013-06-10 16:13:38.855829'
+    - '2013-06-10 16:13:38.855829'
+  - - '8'
+    - '5'
+    - Body
+    - <p>Get in touch with us. Just use the form below and we'll get back to you as
+      soon as we can.</p>
+    - '0'
+    - '2013-06-10 16:20:55.628221'
+    - '2013-06-10 16:20:55.628221'
+  - - '9'
+    - '5'
+    - Side Body
+    - ''
+    - '1'
+    - '2013-06-10 16:20:55.64415'
+    - '2013-06-10 16:20:55.64415'
+  - - '10'
+    - '6'
+    - Body
+    - <p>We've received your inquiry and will get back to you with a response shortly.</p><p><a
+      href='/'>Return to the home page</a></p>
+    - '0'
+    - '2013-06-10 16:20:55.707421'
+    - '2013-06-10 16:20:55.707421'
+  - - '11'
+    - '7'
+    - Body
+    - <p>We respect your privacy. We do not market, rent or sell our email list to
+      any outside parties.</p><p>We need your e-mail address so that we can ensure
+      that the people using our forms are bona fide. It also allows us to send you
+      e-mail newsletters and other communications, if you opt-in. Your postal address
+      is required in order to send you information and pricing, if you request it.</p><p>Please
+      call us at 123 456 7890 if you have any questions or concerns.</p>
+    - '0'
+    - '2013-06-10 16:20:55.768762'
+    - '2013-06-10 16:20:55.768762'
+  - - '12'
+    - '1'
+    - Home Lead Text
+    - <p>We see patterns from chaos. Likes, tweets, favorites, posts, comments, shares,
+      clicks... The context of your audience.Earth's Stellar Commando has placed their
+      secret agent Commander Bron on a planet where they hope he will be able to find
+      out the coordinates of a rival space empire, the Destroyers. Bron is there to
+      impersonate a famous scientist of interest to the Destroyers, and has been given
+      implants through which a monitoring team can see what he sees, hear what he
+      hears and talk to him, even when separated by interstellar distances. </p>
+    - '1'
+    - '2013-06-18 16:23:52.901734'
+    - '2013-06-19 02:33:44.709418'
+  - - '13'
+    - '1'
+    - Home Headline
+    - <h1>Pattern and Chaos</h1>
+    - '0'
+    - '2013-06-18 16:50:56.776365'
+    - '2013-06-19 02:33:44.704563'
+  - - '14'
+    - '3'
+    - L2 Headline
+    - <h1>About Us</h1>
+    - '2'
+    - '2013-06-19 02:54:34.390122'
+    - '2013-07-01 14:03:36.560353'
+  - - '15'
+    - '3'
+    - L2 Lead Text
+    - <p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere
+      sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus,
+      pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam
+      sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat
+      rhoncus.</p>
+    - '3'
+    - '2013-06-19 02:54:34.45828'
+    - '2013-07-01 14:03:36.564984'
+  - - '16'
+    - '8'
+    - Body
+    - ''
+    - '0'
+    - '2013-06-20 16:52:56.179755'
+    - '2013-06-28 21:42:19.542143'
+  - - '17'
+    - '8'
+    - Side Body
+    - ''
+    - '1'
+    - '2013-06-20 16:52:56.19156'
+    - '2013-06-28 21:42:19.547645'
+  - - '18'
+    - '8'
+    - Home Lead Text
+    - ''
+    - '2'
+    - '2013-06-20 16:52:56.198581'
+    - '2013-06-28 21:42:19.558536'
+  - - '19'
+    - '8'
+    - Home Headline
+    - ''
+    - '3'
+    - '2013-06-20 16:52:56.205466'
+    - '2013-06-28 21:42:19.564105'
+  - - '20'
+    - '8'
+    - L2 Headline
+    - <h1>Work</h1>
+    - '4'
+    - '2013-06-20 16:52:56.211355'
+    - '2013-06-28 21:42:19.56984'
+  - - '21'
+    - '8'
+    - L2 Lead Text
+    - <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo<br />consequat. Duis aute irure dolor in reprehenderit
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+      id est laborum.</p>
+    - '5'
+    - '2013-06-20 16:52:56.216567'
+    - '2013-06-28 21:42:19.57796'
+  - - '22'
+    - '9'
+    - Body
+    - ''
+    - '0'
+    - '2013-06-28 19:41:50.342328'
+    - '2013-06-28 21:24:59.674837'
+  - - '24'
+    - '9'
+    - L2 Lead Text
+    - ''
+    - '1'
+    - '2013-06-28 19:41:50.400944'
+    - '2013-06-28 21:24:59.679281'
+  - - '25'
+    - '9'
+    - Column 1
+    - ! "<p>Strategy and planning<br />Communication strategy<br />Media planning
+      and placement</p>\r\n<p>Online media and search<br />Online media planning,
+      buying, and management<br />SEM (search engine marketing)<br />SEO (Search engine
+      optimization and strategy)<br />Interactive marketing (contests, polls, surveys,
+      etc.)</p>\r\n<p>Social media and PR<br />Digital engagement planning<br />PR
+      and social plan development and execution<br />PR and social tracking, reporting,
+      and monitoring<br />Influencer outreach</p>\r\n<p>Web solutions<br />Web and
+      social application development<br />Website creation<br />Mobile and tablet
+      app development<br />Website performance optimization<br />Microsites and landing
+      pages<br />Usability testing and analysis</p>"
+    - '2'
+    - '2013-06-28 19:41:50.405947'
+    - '2013-06-28 21:24:59.68542'
+  - - '26'
+    - '9'
+    - Column 2
+    - ! "<p>Analytic and measurement<br />Metrics definition, measurement, and analysis<br
+      />Campaign performance measurement and analysis<br />Web analytics custom reporting<br
+      />Social media monitoring, reporting, and recommendations<br />ROI definition,
+      measurement, and analysis<br />Data mining</p>\r\n<p>Email and CRM<br />Email
+      and CRM planning and execution<br />Campaign optimization and multivariate testing<br
+      />Email acquisition and lead generation</p>\r\n<p>Research<br />Consumer insights<br
+      />Customer and employee satisfaction<br />Qualitative and quantitative data
+      collection<br />Customer and employee satisfaction<br />Competitive analysis<br
+      />Media research and analysis<br />Persona development</p>"
+    - '3'
+    - '2013-06-28 19:41:50.412449'
+    - '2013-06-28 21:24:59.689598'
+  - - '27'
+    - '9'
+    - Column 3
+    - ''
+    - '4'
+    - '2013-06-28 19:41:50.418177'
+    - '2013-06-28 21:24:59.693547'
+  - - '28'
+    - '9'
+    - L2 Headline
+    - <h1>Our Expertise</h1>
+    - '5'
+    - '2013-06-28 19:46:17.524387'
+    - '2013-06-28 21:24:59.698362'
+  - - '29'
+    - '10'
+    - Body
+    - ''
+    - '0'
+    - '2013-06-28 21:28:45.732075'
+    - '2013-06-28 21:36:49.569658'
+  - - '30'
+    - '10'
+    - Side Body
+    - ''
+    - '1'
+    - '2013-06-28 21:28:45.744389'
+    - '2013-06-28 21:36:49.574025'
+  - - '31'
+    - '10'
+    - L2 Headline
+    - <h1>Culture</h1>
+    - '2'
+    - '2013-06-28 21:28:45.750078'
+    - '2013-06-28 21:36:49.578329'
+  - - '32'
+    - '10'
+    - L2 Lead Text
+    - ! "<p>Every Friday at Metre is dedicated to collaborating with the community
+      and keeping inspiration alive.</p>\r\n<p>We set aside time each week to bring
+      curious minds together and instigate creative and technical mischief. We search
+      for problems and create solutions in an open, collaborative environment. Working
+      hard four days a week allows us to spend Fridays stretching our minds and shaking
+      up the structure and process that can wear the shine off brilliant ideas.</p>"
+    - '3'
+    - '2013-06-28 21:28:45.755722'
+    - '2013-06-28 21:36:49.583943'
+  - - '33'
+    - '10'
+    - Column 1
+    - ''
+    - '4'
+    - '2013-06-28 21:28:45.761029'
+    - '2013-06-28 21:36:49.588983'
+  - - '34'
+    - '10'
+    - Column 2
+    - ''
+    - '5'
+    - '2013-06-28 21:28:45.7661'
+    - '2013-06-28 21:36:49.592757'
+  - - '35'
+    - '10'
+    - Column 3
+    - ''
+    - '6'
+    - '2013-06-28 21:28:45.772137'
+    - '2013-06-28 21:36:49.596517'
+  - - '36'
+    - '11'
+    - Body
+    - ''
+    - '0'
+    - '2013-07-01 12:17:28.398595'
+    - '2013-07-01 12:18:06.421516'
+  - - '37'
+    - '11'
+    - Side Body
+    - ''
+    - '1'
+    - '2013-07-01 12:17:28.434962'
+    - '2013-07-01 12:18:06.428259'
+  - - '38'
+    - '11'
+    - L2 Headline
+    - <p>Careers</p>
+    - '2'
+    - '2013-07-01 12:17:28.440366'
+    - '2013-07-01 12:18:06.432468'
+  - - '39'
+    - '11'
+    - L2 Lead Text
+    - ''
+    - '3'
+    - '2013-07-01 12:17:28.446339'
+    - '2013-07-01 12:18:06.437401'
+  - - '40'
+    - '11'
+    - Column 1
+    - ''
+    - '4'
+    - '2013-07-01 12:17:28.452352'
+    - '2013-07-01 12:18:06.442093'
+  - - '41'
+    - '11'
+    - Column 2
+    - ''
+    - '5'
+    - '2013-07-01 12:17:28.457454'
+    - '2013-07-01 12:18:06.446615'
+  - - '42'
+    - '11'
+    - Column 3
+    - ''
+    - '6'
+    - '2013-07-01 12:17:28.462809'
+    - '2013-07-01 12:18:06.451136'
+  - - '43'
+    - '12'
+    - Body
+    - ''
+    - '0'
+    - '2013-07-01 12:20:25.02877'
+    - '2013-07-01 12:20:25.02877'
+  - - '44'
+    - '12'
+    - Side Body
+    - ''
+    - '1'
+    - '2013-07-01 12:20:25.034179'
+    - '2013-07-01 12:20:25.034179'
+  - - '45'
+    - '12'
+    - L2 Headline
+    - ''
+    - '2'
+    - '2013-07-01 12:20:25.041251'
+    - '2013-07-01 12:20:25.125217'
+  - - '46'
+    - '12'
+    - L2 Lead Text
+    - ''
+    - '3'
+    - '2013-07-01 12:20:25.046677'
+    - '2013-07-01 12:20:25.128028'
+  - - '47'
+    - '12'
+    - Column 1
+    - ''
+    - '4'
+    - '2013-07-01 12:20:25.05158'
+    - '2013-07-01 12:20:25.130757'
+  - - '48'
+    - '12'
+    - Column 2
+    - ''
+    - '5'
+    - '2013-07-01 12:20:25.057844'
+    - '2013-07-01 12:20:25.133412'
+  - - '49'
+    - '12'
+    - Column 3
+    - ''
+    - '6'
+    - '2013-07-01 12:20:25.10847'
+    - '2013-07-01 12:20:25.136169'
+  - - '50'
+    - '13'
+    - Body
+    - ''
+    - '0'
+    - '2013-07-01 12:21:40.521424'
+    - '2013-07-01 12:21:40.521424'
+  - - '51'
+    - '13'
+    - Side Body
+    - ''
+    - '1'
+    - '2013-07-01 12:21:40.52916'
+    - '2013-07-01 12:21:40.52916'
+  - - '52'
+    - '13'
+    - L2 Headline
+    - ''
+    - '2'
+    - '2013-07-01 12:21:40.541601'
+    - '2013-07-01 12:21:40.579444'
+  - - '53'
+    - '13'
+    - L2 Lead Text
+    - ''
+    - '3'
+    - '2013-07-01 12:21:40.546829'
+    - '2013-07-01 12:21:40.582009'
+  - - '54'
+    - '13'
+    - Column 1
+    - ''
+    - '4'
+    - '2013-07-01 12:21:40.553091'
+    - '2013-07-01 12:21:40.585083'
+  - - '55'
+    - '13'
+    - Column 2
+    - ''
+    - '5'
+    - '2013-07-01 12:21:40.558506'
+    - '2013-07-01 12:21:40.587774'
+  - - '56'
+    - '13'
+    - Column 3
+    - ''
+    - '6'
+    - '2013-07-01 12:21:40.563638'
+    - '2013-07-01 12:21:40.590294'
+
+---
+refinery_pages:
+  columns:
+  - id
+  - parent_id
+  - path
+  - slug
+  - show_in_menu
+  - link_url
+  - menu_match
+  - deletable
+  - draft
+  - skip_to_first_child
+  - lft
+  - rgt
+  - depth
+  - view_template
+  - layout_template
+  - created_at
+  - updated_at
+  - background_image_id
+  - white_text
+  - span_class
+  - offset_value
+  records: 
+  - - '1'
+    - 
+    - 
+    - home
+    - true
+    - /
+    - ^/$
+    - false
+    - false
+    - false
+    - '1'
+    - '4'
+    - '0'
+    - 
+    - 
+    - '2013-06-10 16:13:37.158651'
+    - '2013-06-19 02:33:44.696375'
+    - '2'
+    - true
+    - 
+    - 
+  - - '2'
+    - '1'
+    - 
+    - page-not-found
+    - false
+    - 
+    - ^/404$
+    - false
+    - false
+    - false
+    - '2'
+    - '3'
+    - '1'
+    - 
+    - 
+    - '2013-06-10 16:13:37.549381'
+    - '2013-06-10 16:20:54.944133'
+    - 
+    - false
+    - 
+    - 
+  - - '3'
+    - 
+    - 
+    - about
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - '5'
+    - '6'
+    - '0'
+    - 
+    - 
+    - '2013-06-10 16:13:37.702562'
+    - '2013-07-01 14:03:36.471214'
+    - '5'
+    - true
+    - span6
+    - offset6
+  - - '4'
+    - 
+    - 
+    - blog
+    - true
+    - /blog
+    - ^/blogs?(/|/.+?|)$
+    - false
+    - false
+    - false
+    - '7'
+    - '8'
+    - '0'
+    - 
+    - 
+    - '2013-06-10 16:13:38.820776'
+    - '2013-06-10 16:13:38.820776'
+    - 
+    - false
+    - 
+    - 
+  - - '5'
+    - 
+    - 
+    - contact
+    - true
+    - /contact
+    - ^/(inquiries|contact).*$
+    - false
+    - false
+    - false
+    - '9'
+    - '14'
+    - '0'
+    - 
+    - 
+    - '2013-06-10 16:20:55.592845'
+    - '2013-06-10 16:20:55.592845'
+    - 
+    - false
+    - 
+    - 
+  - - '6'
+    - '5'
+    - 
+    - thank-you
+    - false
+    - /contact/thank_you
+    - ^/(inquiries|contact)/thank_you$
+    - false
+    - false
+    - false
+    - '10'
+    - '11'
+    - '1'
+    - 
+    - 
+    - '2013-06-10 16:20:55.662578'
+    - '2013-06-10 16:20:55.662578'
+    - 
+    - false
+    - 
+    - 
+  - - '7'
+    - '5'
+    - 
+    - privacy-policy
+    - false
+    - 
+    - 
+    - true
+    - false
+    - false
+    - '12'
+    - '13'
+    - '1'
+    - 
+    - 
+    - '2013-06-10 16:20:55.724878'
+    - '2013-06-10 16:20:55.724878'
+    - 
+    - false
+    - 
+    - 
+  - - '8'
+    - 
+    - 
+    - work
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - '15'
+    - '16'
+    - '0'
+    - 
+    - 
+    - '2013-06-20 16:52:56.054004'
+    - '2013-06-28 21:42:19.528027'
+    - '12'
+    - true
+    - span8
+    - ''
+  - - '9'
+    - 
+    - 
+    - services
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - '17'
+    - '18'
+    - '0'
+    - 
+    - 
+    - '2013-06-28 19:41:49.939496'
+    - '2013-06-28 21:24:59.666533'
+    - '9'
+    - true
+    - ''
+    - ''
+  - - '10'
+    - 
+    - 
+    - culture
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - '19'
+    - '20'
+    - '0'
+    - 
+    - 
+    - '2013-06-28 21:28:45.695955'
+    - '2013-06-28 21:36:49.560907'
+    - '11'
+    - true
+    - span6
+    - offset6
+  - - '11'
+    - 
+    - 
+    - careers
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - '21'
+    - '22'
+    - '0'
+    - 
+    - 
+    - '2013-07-01 12:17:28.253964'
+    - '2013-07-01 12:18:06.415113'
+    - 
+    - false
+    - ''
+    - ''
+  - - '12'
+    - 
+    - 
+    - people
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - '23'
+    - '24'
+    - '0'
+    - 
+    - 
+    - '2013-07-01 12:20:25.017999'
+    - '2013-07-01 12:20:25.017999'
+    - 
+    - false
+    - ''
+    - ''
+  - - '13'
+    - 
+    - 
+    - news
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - '25'
+    - '26'
+    - '0'
+    - 
+    - 
+    - '2013-07-01 12:21:40.505331'
+    - '2013-07-01 12:21:40.505331'
+    - 
+    - false
+    - ''
+    - ''
+
+---
+refinery_page_part_translations:
+  columns:
+  - id
+  - refinery_page_part_id
+  - locale
+  - body
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - '1'
+    - en
+    - <p>This is cool.</p>
+    - '2013-06-10 16:13:37.41537'
+    - '2013-06-18 16:28:12.459813'
+  - - '2'
+    - '2'
+    - en
+    - <p>This is another block of content over here.</p>
+    - '2013-06-10 16:13:37.533087'
+    - '2013-06-10 16:13:37.533087'
+  - - '3'
+    - '3'
+    - en
+    - <h2>Sorry, there was a problem...</h2><p>The page you requested was not found.</p><p><a
+      href='/'>Return to the home page</a></p>
+    - '2013-06-10 16:13:37.6345'
+    - '2013-06-10 16:13:37.6345'
+  - - '4'
+    - '4'
+    - en
+    - ! "<p>This is just a standard text page example. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet
+      nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis
+      metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris.
+      Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus
+      consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero
+      hendrerit dapibus.\r\n\r\nInteger interdum purus id erat. Duis nec velit vitae
+      dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia
+      nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla
+      semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis
+      orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed
+      nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum
+      imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>"
+    - '2013-06-10 16:13:37.768488'
+    - '2013-06-17 18:27:15.895412'
+  - - '5'
+    - '5'
+    - en
+    - <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla
+      nisi a elit. Duis ultricies orci ut arcu. Ut ac nibh. Duis blandit rhoncus magna.
+      Pellentesque semper risus ut magna. Etiam pulvinar tellus eget diam. Morbi blandit.
+      Donec pulvinar mauris at ligula. Sed pellentesque, ipsum id congue molestie,
+      lectus risus egestas pede, ac viverra diam lacus ac urna. Aenean elit.</p>
+    - '2013-06-10 16:13:37.777299'
+    - '2013-06-10 16:13:37.777299'
+  - - '6'
+    - '6'
+    - en
+    - 
+    - '2013-06-10 16:13:38.85181'
+    - '2013-06-10 16:13:38.85181'
+  - - '7'
+    - '7'
+    - en
+    - 
+    - '2013-06-10 16:13:38.858728'
+    - '2013-06-10 16:13:38.858728'
+  - - '8'
+    - '8'
+    - en
+    - <p>Get in touch with us. Just use the form below and we'll get back to you as
+      soon as we can.</p>
+    - '2013-06-10 16:20:55.635787'
+    - '2013-06-10 16:20:55.635787'
+  - - '9'
+    - '9'
+    - en
+    - ''
+    - '2013-06-10 16:20:55.647797'
+    - '2013-06-10 16:20:55.647797'
+  - - '10'
+    - '10'
+    - en
+    - <p>We've received your inquiry and will get back to you with a response shortly.</p><p><a
+      href='/'>Return to the home page</a></p>
+    - '2013-06-10 16:20:55.711584'
+    - '2013-06-10 16:20:55.711584'
+  - - '11'
+    - '11'
+    - en
+    - <p>We respect your privacy. We do not market, rent or sell our email list to
+      any outside parties.</p><p>We need your e-mail address so that we can ensure
+      that the people using our forms are bona fide. It also allows us to send you
+      e-mail newsletters and other communications, if you opt-in. Your postal address
+      is required in order to send you information and pricing, if you request it.</p><p>Please
+      call us at 123 456 7890 if you have any questions or concerns.</p>
+    - '2013-06-10 16:20:55.772552'
+    - '2013-06-10 16:20:55.772552'
+  - - '12'
+    - '12'
+    - en
+    - <p>We see patterns from chaos. Likes, tweets, favorites, posts, comments, shares,
+      clicks... The context of your audience.Earth's Stellar Commando has placed their
+      secret agent Commander Bron on a planet where they hope he will be able to find
+      out the coordinates of a rival space empire, the Destroyers. Bron is there to
+      impersonate a famous scientist of interest to the Destroyers, and has been given
+      implants through which a monitoring team can see what he sees, hear what he
+      hears and talk to him, even when separated by interstellar distances. </p>
+    - '2013-06-18 16:23:52.970135'
+    - '2013-06-18 17:45:28.458435'
+  - - '13'
+    - '13'
+    - en
+    - <h1>Pattern and Chaos</h1>
+    - '2013-06-18 16:50:56.781024'
+    - '2013-06-18 16:50:56.781024'
+  - - '14'
+    - '14'
+    - en
+    - <h1>About Us</h1>
+    - '2013-06-19 02:54:34.452923'
+    - '2013-06-19 02:54:34.452923'
+  - - '15'
+    - '15'
+    - en
+    - <p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere
+      sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus,
+      pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam
+      sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat
+      rhoncus.</p>
+    - '2013-06-19 02:54:34.510682'
+    - '2013-06-19 02:54:34.510682'
+  - - '16'
+    - '16'
+    - en
+    - ''
+    - '2013-06-20 16:52:56.187116'
+    - '2013-06-20 16:52:56.187116'
+  - - '17'
+    - '17'
+    - en
+    - ''
+    - '2013-06-20 16:52:56.195401'
+    - '2013-06-20 16:52:56.195401'
+  - - '18'
+    - '18'
+    - en
+    - ''
+    - '2013-06-20 16:52:56.202424'
+    - '2013-06-20 16:52:56.202424'
+  - - '19'
+    - '19'
+    - en
+    - ''
+    - '2013-06-20 16:52:56.208917'
+    - '2013-06-20 16:52:56.208917'
+  - - '20'
+    - '20'
+    - en
+    - <h1>Work</h1>
+    - '2013-06-20 16:52:56.214219'
+    - '2013-06-20 16:52:56.214219'
+  - - '21'
+    - '21'
+    - en
+    - <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo<br />consequat. Duis aute irure dolor in reprehenderit
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+      id est laborum.</p>
+    - '2013-06-20 16:52:56.220067'
+    - '2013-06-20 16:52:56.220067'
+  - - '22'
+    - '22'
+    - en
+    - ''
+    - '2013-06-28 19:41:50.390975'
+    - '2013-06-28 19:41:50.390975'
+  - - '24'
+    - '24'
+    - en
+    - ''
+    - '2013-06-28 19:41:50.403667'
+    - '2013-06-28 19:41:50.403667'
+  - - '25'
+    - '25'
+    - en
+    - ! "<p>Strategy and planning<br />Communication strategy<br />Media planning
+      and placement</p>\r\n<p>Online media and search<br />Online media planning,
+      buying, and management<br />SEM (search engine marketing)<br />SEO (Search engine
+      optimization and strategy)<br />Interactive marketing (contests, polls, surveys,
+      etc.)</p>\r\n<p>Social media and PR<br />Digital engagement planning<br />PR
+      and social plan development and execution<br />PR and social tracking, reporting,
+      and monitoring<br />Influencer outreach</p>\r\n<p>Web solutions<br />Web and
+      social application development<br />Website creation<br />Mobile and tablet
+      app development<br />Website performance optimization<br />Microsites and landing
+      pages<br />Usability testing and analysis</p>"
+    - '2013-06-28 19:41:50.409895'
+    - '2013-06-28 19:41:50.409895'
+  - - '26'
+    - '26'
+    - en
+    - ! "<p>Analytic and measurement<br />Metrics definition, measurement, and analysis<br
+      />Campaign performance measurement and analysis<br />Web analytics custom reporting<br
+      />Social media monitoring, reporting, and recommendations<br />ROI definition,
+      measurement, and analysis<br />Data mining</p>\r\n<p>Email and CRM<br />Email
+      and CRM planning and execution<br />Campaign optimization and multivariate testing<br
+      />Email acquisition and lead generation</p>\r\n<p>Research<br />Consumer insights<br
+      />Customer and employee satisfaction<br />Qualitative and quantitative data
+      collection<br />Customer and employee satisfaction<br />Competitive analysis<br
+      />Media research and analysis<br />Persona development</p>"
+    - '2013-06-28 19:41:50.415567'
+    - '2013-06-28 19:41:50.415567'
+  - - '27'
+    - '27'
+    - en
+    - ''
+    - '2013-06-28 19:41:50.422132'
+    - '2013-06-28 19:41:50.422132'
+  - - '28'
+    - '28'
+    - en
+    - <h1>Our Expertise</h1>
+    - '2013-06-28 19:46:17.528205'
+    - '2013-06-28 19:46:53.138474'
+  - - '29'
+    - '29'
+    - en
+    - ''
+    - '2013-06-28 21:28:45.737689'
+    - '2013-06-28 21:28:45.737689'
+  - - '30'
+    - '30'
+    - en
+    - ''
+    - '2013-06-28 21:28:45.74777'
+    - '2013-06-28 21:28:45.74777'
+  - - '31'
+    - '31'
+    - en
+    - <h1>Culture</h1>
+    - '2013-06-28 21:28:45.753475'
+    - '2013-06-28 21:28:45.753475'
+  - - '32'
+    - '32'
+    - en
+    - ! "<p>Every Friday at Metre is dedicated to collaborating with the community
+      and keeping inspiration alive.</p>\r\n<p>We set aside time each week to bring
+      curious minds together and instigate creative and technical mischief. We search
+      for problems and create solutions in an open, collaborative environment. Working
+      hard four days a week allows us to spend Fridays stretching our minds and shaking
+      up the structure and process that can wear the shine off brilliant ideas.</p>"
+    - '2013-06-28 21:28:45.75861'
+    - '2013-06-28 21:29:24.672419'
+  - - '33'
+    - '33'
+    - en
+    - ''
+    - '2013-06-28 21:28:45.763859'
+    - '2013-06-28 21:28:45.763859'
+  - - '34'
+    - '34'
+    - en
+    - ''
+    - '2013-06-28 21:28:45.76961'
+    - '2013-06-28 21:28:45.76961'
+  - - '35'
+    - '35'
+    - en
+    - ''
+    - '2013-06-28 21:28:45.775057'
+    - '2013-06-28 21:28:45.775057'
+  - - '36'
+    - '36'
+    - en
+    - ''
+    - '2013-07-01 12:17:28.429279'
+    - '2013-07-01 12:17:28.429279'
+  - - '37'
+    - '37'
+    - en
+    - ''
+    - '2013-07-01 12:17:28.438126'
+    - '2013-07-01 12:17:28.438126'
+  - - '38'
+    - '38'
+    - en
+    - <p>Careers</p>
+    - '2013-07-01 12:17:28.443397'
+    - '2013-07-01 12:18:06.434988'
+  - - '39'
+    - '39'
+    - en
+    - ''
+    - '2013-07-01 12:17:28.449868'
+    - '2013-07-01 12:17:28.449868'
+  - - '40'
+    - '40'
+    - en
+    - ''
+    - '2013-07-01 12:17:28.455162'
+    - '2013-07-01 12:17:28.455162'
+  - - '41'
+    - '41'
+    - en
+    - ''
+    - '2013-07-01 12:17:28.460367'
+    - '2013-07-01 12:17:28.460367'
+  - - '42'
+    - '42'
+    - en
+    - ''
+    - '2013-07-01 12:17:28.465873'
+    - '2013-07-01 12:17:28.465873'
+  - - '43'
+    - '43'
+    - en
+    - ''
+    - '2013-07-01 12:20:25.031908'
+    - '2013-07-01 12:20:25.031908'
+  - - '44'
+    - '44'
+    - en
+    - ''
+    - '2013-07-01 12:20:25.037093'
+    - '2013-07-01 12:20:25.037093'
+  - - '45'
+    - '45'
+    - en
+    - ''
+    - '2013-07-01 12:20:25.044454'
+    - '2013-07-01 12:20:25.044454'
+  - - '46'
+    - '46'
+    - en
+    - ''
+    - '2013-07-01 12:20:25.049405'
+    - '2013-07-01 12:20:25.049405'
+  - - '47'
+    - '47'
+    - en
+    - ''
+    - '2013-07-01 12:20:25.055387'
+    - '2013-07-01 12:20:25.055387'
+  - - '48'
+    - '48'
+    - en
+    - ''
+    - '2013-07-01 12:20:25.105846'
+    - '2013-07-01 12:20:25.105846'
+  - - '49'
+    - '49'
+    - en
+    - ''
+    - '2013-07-01 12:20:25.111467'
+    - '2013-07-01 12:20:25.111467'
+  - - '50'
+    - '50'
+    - en
+    - ''
+    - '2013-07-01 12:21:40.526249'
+    - '2013-07-01 12:21:40.526249'
+  - - '51'
+    - '51'
+    - en
+    - ''
+    - '2013-07-01 12:21:40.538859'
+    - '2013-07-01 12:21:40.538859'
+  - - '52'
+    - '52'
+    - en
+    - ''
+    - '2013-07-01 12:21:40.544622'
+    - '2013-07-01 12:21:40.544622'
+  - - '53'
+    - '53'
+    - en
+    - ''
+    - '2013-07-01 12:21:40.550574'
+    - '2013-07-01 12:21:40.550574'
+  - - '54'
+    - '54'
+    - en
+    - ''
+    - '2013-07-01 12:21:40.556258'
+    - '2013-07-01 12:21:40.556258'
+  - - '55'
+    - '55'
+    - en
+    - ''
+    - '2013-07-01 12:21:40.561369'
+    - '2013-07-01 12:21:40.561369'
+  - - '56'
+    - '56'
+    - en
+    - ''
+    - '2013-07-01 12:21:40.566704'
+    - '2013-07-01 12:21:40.566704'
+
+---
+refinery_page_translations:
+  columns:
+  - id
+  - refinery_page_id
+  - locale
+  - title
+  - custom_slug
+  - menu_title
+  - slug
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - '1'
+    - en
+    - Home
+    - 
+    - ''
+    - home
+    - '2013-06-10 16:13:37.054957'
+    - '2013-06-17 16:26:00.064745'
+  - - '2'
+    - '2'
+    - en
+    - Page not found
+    - 
+    - 
+    - page-not-found
+    - '2013-06-10 16:13:37.545137'
+    - '2013-06-10 16:13:37.553322'
+  - - '3'
+    - '3'
+    - en
+    - About
+    - 
+    - ''
+    - about
+    - '2013-06-10 16:13:37.697809'
+    - '2013-06-17 18:27:15.88794'
+  - - '4'
+    - '4'
+    - en
+    - Blog
+    - 
+    - 
+    - blog
+    - '2013-06-10 16:13:38.816826'
+    - '2013-06-10 16:13:38.824553'
+  - - '5'
+    - '5'
+    - en
+    - Contact
+    - 
+    - 
+    - contact
+    - '2013-06-10 16:20:55.557463'
+    - '2013-06-10 16:20:55.601769'
+  - - '6'
+    - '6'
+    - en
+    - Thank You
+    - 
+    - 
+    - thank-you
+    - '2013-06-10 16:20:55.658517'
+    - '2013-06-10 16:20:55.666791'
+  - - '7'
+    - '7'
+    - en
+    - Privacy Policy
+    - 
+    - 
+    - privacy-policy
+    - '2013-06-10 16:20:55.7202'
+    - '2013-06-10 16:20:55.728961'
+  - - '8'
+    - '8'
+    - en
+    - Work
+    - 
+    - ''
+    - work
+    - '2013-06-20 16:52:56.019724'
+    - '2013-06-20 16:52:56.105151'
+  - - '9'
+    - '9'
+    - en
+    - Services
+    - 
+    - ''
+    - services
+    - '2013-06-28 19:41:49.89425'
+    - '2013-06-28 19:41:49.987452'
+  - - '10'
+    - '10'
+    - en
+    - Culture
+    - 
+    - ''
+    - culture
+    - '2013-06-28 21:28:45.691618'
+    - '2013-06-28 21:28:45.701437'
+  - - '11'
+    - '11'
+    - en
+    - Careers
+    - 
+    - ''
+    - careers
+    - '2013-07-01 12:17:28.210268'
+    - '2013-07-01 12:17:28.306637'
+  - - '12'
+    - '12'
+    - en
+    - People
+    - 
+    - ''
+    - people
+    - '2013-07-01 12:20:25.014141'
+    - '2013-07-01 12:20:25.022467'
+  - - '13'
+    - '13'
+    - en
+    - News
+    - 
+    - ''
+    - news
+    - '2013-07-01 12:21:40.499729'
+    - '2013-07-01 12:21:40.51227'
+
+---
+refinery_images:
+  columns:
+  - id
+  - image_mime_type
+  - image_name
+  - image_size
+  - image_width
+  - image_height
+  - image_uid
+  - image_ext
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - image/png
+    - web-940-metre2.png
+    - '1177381'
+    - '1200'
+    - '1200'
+    - 2013/06/17/11_18_46_223_web_940_metre2.png
+    - 
+    - '2013-06-17 16:18:46.263772'
+    - '2013-06-17 16:18:46.263772'
+  - - '2'
+    - image/jpeg
+    - bg1.jpg
+    - '45183'
+    - '1200'
+    - '797'
+    - 2013/06/17/11_25_43_552_bg1.jpg
+    - 
+    - '2013-06-17 16:25:43.553344'
+    - '2013-06-17 16:25:43.553344'
+  - - '3'
+    - image/jpeg
+    - clips.jpg
+    - '66739'
+    - '1200'
+    - '797'
+    - 2013/06/17/13_27_02_587_clips.jpg
+    - 
+    - '2013-06-17 18:27:02.588924'
+    - '2013-06-17 18:27:02.588924'
+  - - '4'
+    - image/jpeg
+    - clips3.jpg
+    - '65447'
+    - '1200'
+    - '797'
+    - 2013/06/18/21_54_21_548_clips3.jpg
+    - 
+    - '2013-06-19 02:54:21.794418'
+    - '2013-06-19 02:54:21.794418'
+  - - '5'
+    - image/jpeg
+    - binder.jpg
+    - '13344'
+    - '1200'
+    - '797'
+    - 2013/06/20/09_39_45_486_binder.jpg
+    - 
+    - '2013-06-20 14:39:45.487765'
+    - '2013-06-20 14:39:45.487765'
+  - - '6'
+    - image/jpeg
+    - bricks.jpg
+    - '176983'
+    - '1200'
+    - '797'
+    - 2013/06/20/11_51_28_949_bricks.jpg
+    - 
+    - '2013-06-20 16:51:28.95119'
+    - '2013-06-20 16:51:28.95119'
+  - - '7'
+    - image/png
+    - real-time.png
+    - '823647'
+    - '1029'
+    - '683'
+    - 2013/06/28/14_41_41_571_real_time.png
+    - 
+    - '2013-06-28 19:41:41.583217'
+    - '2013-06-28 19:41:41.583217'
+  - - '8'
+    - image/jpeg
+    - realtime-2.jpg
+    - '33701'
+    - '1029'
+    - '683'
+    - 2013/06/28/16_21_31_942_realtime_2.jpg
+    - 
+    - '2013-06-28 21:21:31.94391'
+    - '2013-06-28 21:21:31.94391'
+  - - '9'
+    - image/jpeg
+    - realtime-2-dark.jpg
+    - '30333'
+    - '1029'
+    - '683'
+    - 2013/06/28/16_24_51_842_realtime_2_dark.jpg
+    - 
+    - '2013-06-28 21:24:51.843671'
+    - '2013-06-28 21:24:51.843671'
+  - - '10'
+    - image/jpeg
+    - jg.jpg
+    - '82549'
+    - '1200'
+    - '903'
+    - 2013/06/28/16_33_36_954_jg.jpg
+    - 
+    - '2013-06-28 21:33:36.955478'
+    - '2013-06-28 21:33:36.955478'
+  - - '11'
+    - image/jpeg
+    - jg2.jpg
+    - '93067'
+    - '1200'
+    - '929'
+    - 2013/06/28/16_36_41_427_jg2.jpg
+    - 
+    - '2013-06-28 21:36:41.429035'
+    - '2013-06-28 21:36:41.429035'
+  - - '12'
+    - image/jpeg
+    - kerstin1.jpg
+    - '46863'
+    - '1029'
+    - '683'
+    - 2013/06/28/16_42_13_295_kerstin1.jpg
+    - 
+    - '2013-06-28 21:42:13.296623'
+    - '2013-06-28 21:42:13.296623'
+
+---
+seo_meta:
+  columns:
+  - id
+  - seo_meta_id
+  - seo_meta_type
+  - browser_title
+  - meta_keywords
+  - meta_description
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - '1'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-06-10 16:13:37.109139'
+    - '2013-06-17 16:25:59.823271'
+  - - '2'
+    - '2'
+    - Refinery::Page::Translation
+    - 
+    - 
+    - 
+    - '2013-06-10 16:13:37.547483'
+    - '2013-06-10 16:13:37.547483'
+  - - '3'
+    - '3'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-06-10 16:13:37.700343'
+    - '2013-06-17 18:27:15.548192'
+  - - '4'
+    - '4'
+    - Refinery::Page::Translation
+    - 
+    - 
+    - 
+    - '2013-06-10 16:13:38.81894'
+    - '2013-06-10 16:13:38.81894'
+  - - '5'
+    - '5'
+    - Refinery::Page::Translation
+    - 
+    - 
+    - 
+    - '2013-06-10 16:20:55.56061'
+    - '2013-06-10 16:20:55.56061'
+  - - '6'
+    - '6'
+    - Refinery::Page::Translation
+    - 
+    - 
+    - 
+    - '2013-06-10 16:20:55.660731'
+    - '2013-06-10 16:20:55.660731'
+  - - '7'
+    - '7'
+    - Refinery::Page::Translation
+    - 
+    - 
+    - 
+    - '2013-06-10 16:20:55.722559'
+    - '2013-06-10 16:20:55.722559'
+  - - '8'
+    - '8'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-06-20 16:52:56.045639'
+    - '2013-06-20 16:52:56.045639'
+  - - '9'
+    - '9'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-06-28 19:41:49.933125'
+    - '2013-06-28 19:41:49.933125'
+  - - '10'
+    - '10'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-06-28 21:28:45.69379'
+    - '2013-06-28 21:28:45.69379'
+  - - '11'
+    - '11'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-07-01 12:17:28.240957'
+    - '2013-07-01 12:17:28.240957'
+  - - '12'
+    - '12'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-07-01 12:20:25.015649'
+    - '2013-07-01 12:20:25.015649'
+  - - '13'
+    - '13'
+    - Refinery::Page::Translation
+    - ''
+    - ''
+    - ''
+    - '2013-07-01 12:21:40.502618'
+    - '2013-07-01 12:21:40.502618'
+
+---
+refinery_settings:
+  columns:
+  - id
+  - name
+  - value
+  - destroyable
+  - scoping
+  - restricted
+  - form_value_type
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - inquiry_confirmation_body
+    - ! "--- ! 'Thank you for your inquiry %name%,\n\n  This email is a receipt to
+      confirm we have received your inquiry and we''ll be in\n  touch shortly.\n\n
+      \ Thanks.'\n"
+    - true
+    - 
+    - false
+    - text_area
+    - '2013-06-10 16:20:56.020469'
+    - '2013-06-10 16:20:56.020469'
+  - - '2'
+    - inquiry_confirmation_message_en
+    - ! "--- Thank you for your inquiry %name%, This email is a receipt to confirm
+      we have\n  received your inquiry and we'll be in touch shortly. Thanks.\n...\n"
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-06-10 16:20:56.056213'
+    - '2013-06-10 16:20:56.056213'
+  - - '3'
+    - inquiry_confirmation_subject_en
+    - ! '--- Thank you for your inquiry
+
+      ...
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-06-10 16:20:56.063839'
+    - '2013-06-10 16:20:56.063839'
+  - - '4'
+    - inquiry_notification_recipients
+    - ! '--- ''''
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-06-10 16:20:56.070187'
+    - '2013-06-10 16:20:56.070187'
+  - - '5'
+    - inquiry_notification_subject
+    - ! '--- New inquiry from your website
+
+      ...
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-06-10 16:20:56.078939'
+    - '2013-06-10 16:20:56.078939'
+  - - '6'
+    - inquiry_send_confirmation
+    - ! '--- ''true''
+
+'
+    - true
+    - inquiries
+    - false
+    - text_area
+    - '2013-06-10 16:20:56.088319'
+    - '2013-06-10 16:20:56.088319'
+  - - '7'
+    - comments_allowed
+    - ! '--- ''true''
+
+'
+    - true
+    - blog
+    - false
+    - text_area
+    - '2013-06-10 16:21:56.525047'
+    - '2013-06-10 16:21:56.525047'
+  - - '8'
+    - comment_moderation
+    - ! '--- ''true''
+
+'
+    - true
+    - blog
+    - false
+    - text_area
+    - '2013-06-10 16:21:56.614109'
+    - '2013-06-10 16:21:56.614109'
+  - - '9'
+    - teasers_enabled
+    - ! '--- ''true''
+
+'
+    - true
+    - blog
+    - false
+    - text_area
+    - '2013-06-10 16:21:56.639521'
+    - '2013-06-11 18:49:15.126565'
+
+---
+refinery_menus_links:
+  columns:
+  - id
+  - parent_id
+  - lft
+  - rgt
+  - depth
+  - refinery_menu_id
+  - menu_match
+  - resource_id
+  - resource_type
+  - title_attribute
+  - custom_url
+  - label
+  - id_attribute
+  - class_attribute
+  records: 
+  - - '1'
+    - 
+    - '9'
+    - '10'
+    - '0'
+    - '1'
+    - 
+    - '10'
+    - refinery_page
+    - 
+    - 
+    - Culture
+    - 
+    - 
+  - - '2'
+    - 
+    - '13'
+    - '14'
+    - '0'
+    - '1'
+    - 
+    - '4'
+    - refinery_page
+    - 
+    - 
+    - Blog
+    - 
+    - 
+  - - '3'
+    - 
+    - '15'
+    - '16'
+    - '0'
+    - '1'
+    - 
+    - '11'
+    - refinery_page
+    - 
+    - 
+    - Careers
+    - 
+    - 
+  - - '4'
+    - 
+    - '11'
+    - '12'
+    - '0'
+    - '1'
+    - 
+    - '13'
+    - refinery_page
+    - 
+    - 
+    - News
+    - 
+    - 
+  - - '5'
+    - 
+    - '1'
+    - '2'
+    - '0'
+    - '2'
+    - 
+    - 
+    - 
+    - 
+    - https://www.facebook.com/metreagency
+    - Like Us!
+    - 
+    - 
+  - - '6'
+    - 
+    - '7'
+    - '8'
+    - '0'
+    - '2'
+    - 
+    - 
+    - 
+    - 
+    - https://twitter.com/metre_ci
+    - ! '@metre_ci'
+    - 
+    - 
+  - - '7'
+    - 
+    - '5'
+    - '6'
+    - '0'
+    - '2'
+    - 
+    - 
+    - 
+    - 
+    - https://twitter.com/metre_jg
+    - ! '@metre_jg'
+    - 
+    - 
+  - - '8'
+    - 
+    - '3'
+    - '4'
+    - '0'
+    - '2'
+    - 
+    - 
+    - 
+    - 
+    - https://twitter.com/metre_kb
+    - ! '@metre_kb'
+    - 
+    - 
+
+---
+refinery_menus:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  - permatitle
+  records: 
+  - - '1'
+    - footer menu
+    - '2013-07-01 12:13:20.273444'
+    - '2013-07-01 12:13:20.273444'
+    - footer_menu
+  - - '2'
+    - social
+    - '2013-07-01 12:24:15.705585'
+    - '2013-07-01 12:24:15.705585'
+    - social
