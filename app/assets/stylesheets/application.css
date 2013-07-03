@@ -13,6 +13,31 @@
  *= require_tree .
  */
 
+
+/*
+
+font-family:'ITCLubalinGraphW01-Bk';
+font-family:'ITCLubalinGraphW01-Md';
+font-family:'ITCLubalinGraphW01-MdOb';
+font-family:'ITCLubalinGraphW01-XLt';
+font-family:'ITCLubalinGraphW01-XLtO';
+font-family:'ITCLubalinGraphW01-BkOb';
+font-family:'ITCLubalinGraphW01-Demi';
+font-family:'ITCLubalinGraphW01-DmOb';
+font-family:'ITCLubalinGraphW01-Bd';
+font-family:'ITCLubalinGraphW01-BdOb';
+font-family:'ITCLubalinGraphW01-BkCn 735026';
+font-family:'ITCLubalinGrW01-BkCondS';
+font-family:'ITCLubalinGraphW01-BkCn 735029';
+font-family:'ITCLubalinGraphW01-MdCn 735038';
+font-family:'ITCLubalinGrW01-MdCondS';
+font-family:'ITCLubalinGraphW01-MdCn 735041';
+font-family:'ITCLubalinGraphW01-DmBd 735032';
+font-family:'ITCLubalinGraphW01-DmBd 735035';
+font-family:'ITCLubalinGraphW01-BdCn 735020';
+font-family:'ITCLubalinGraphW01-BdCn 735023';
+
+*/
  
 body {padding-right:0 !important;padding-left:0 !important;}
 
@@ -20,8 +45,8 @@ body {padding-right:0 !important;padding-left:0 !important;}
 .navbar-inverse .navbar-inner {background-color:#000000 !important;padding-bottom:0 !important;}
 
 
-h1, h2, h3 {color:#000000;font-family:'Open Sans Condensed', sans-serif !important;font-weight:100 !important;}
-.home h1 {font-size:100px;font-family: 'Open Sans Condensed', sans-serif !important;text-transform: uppercase !important;text-align:center;line-height:1em;margin-bottom:1em;margin-top:1em;}
+h1, h2, h3 {color:#000000;font-family:'ITCLubalinGraphW01-XLt', serif !important;font-weight:100 !important;}
+.home h1 {font-size:50px;font-family: 'ITCLubalinGraphW01-Md', serif !important;text-align:center;line-height:1.15em;margin-bottom:1em;margin-top:1em;}
 .home.lead {color:#000000;}
 .white_text {color:#ffffff !important;}
 .l2 h1 {font-size:72px;line-height: 2em;}
@@ -37,6 +62,7 @@ footer {padding:20px;color:#ffffff;margin-top:100px;opacity:0.7;}
 #social-section ul li:nth-child(3) {background:url('jg.png') no-repeat 15px 35px;}
 #social-section ul li:nth-child(4) {background:url('ci.png') no-repeat 15px 35px;}
 #social-section blockquote p {font-family:Times, serif;font-size:24px !important;font-style: italic;}
+#copyright {opacity:0.25;font-size:10px;}
 
 /*.home h1 {font-size:96px;font-family:'Open Sans Condensed', sans-serif !important;text-transform: uppercase !important;text-align:center;line-height:2em;}
 .home.lead {color:#000;}*/
