@@ -53,10 +53,11 @@
 
     </div><!-- page_container -->
 
-    
+      
 
 
     <%= render '/refinery/javascripts' %>
+    <%= render :partial => 'refinery/google' if RAILS_ENV == ‘production’ %>
 
 
 
