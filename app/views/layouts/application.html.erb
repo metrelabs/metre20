@@ -57,7 +57,7 @@
 
 
     <%= render '/refinery/javascripts' %>
-    <%= render :partial => 'refinery/google' if ENV_VAR == 'production' %>
+    <%= render :partial => 'refinery/google' if RACK_ENV == 'production' %>
 
 
 
