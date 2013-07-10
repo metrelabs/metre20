@@ -14,4 +14,8 @@ module ApplicationHelper
 		@page.offset_value
 	end
 
+	def col_span
+		@page.col_span
+	end
+
 end

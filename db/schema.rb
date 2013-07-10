@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130630144319) do
+ActiveRecord::Schema.define(:version => 20130710195257) do
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -200,6 +200,7 @@ ActiveRecord::Schema.define(:version => 20130630144319) do
     t.boolean  "white_text"
     t.string   "span_class"
     t.string   "offset_value"
+    t.string   "col_span"
   end
 
   add_index "refinery_pages", ["depth"], :name => "index_refinery_pages_on_depth"
