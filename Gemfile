@@ -10,6 +10,7 @@ gem 'twitter-bootstrap-rails'
 gem 'refinerycms-menus', '~> 2.0.7'
 gem 'yaml_db'
 gem 'twitter'
+gem 'unicorn'
 
 group :production do
 	gem 'fog'
