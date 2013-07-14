@@ -6,10 +6,14 @@
       <%= link_to Refinery::Core.site_name, refinery.root_path, :class => 'brand' %>
     </h1>
 
-      <%= render(:partial => "/refinery/menu", :locals => {
+      <%#= render(:partial => "/refinery/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
            }) %>
+
+      <%= render :partial => "/refinery/menu", :locals => {
+      :roots => refinery_menu("main_menu")
+    } %>
 
     </div>
   </div>
