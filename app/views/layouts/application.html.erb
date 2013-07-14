@@ -59,7 +59,18 @@
     <%= render '/refinery/javascripts' %>
     <%= render :partial => 'refinery/google' if Rails.env == 'production' %>
 
+<script type="text/javascript">
 
+var $ = jQuery.noConflict();
+
+$(document).ready(function() {
+ $('#myCarousel').carousel({
+       interval: 2000,
+          cycle: true
+ });
+});
+
+</script>
 
   </body>
 </html>
