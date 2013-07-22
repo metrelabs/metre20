@@ -21,6 +21,9 @@ db/*.sqlite3-journal
 tmp
 tmp/**/*
 
+# Ignore Twitter secrects
+config/twitter.yml
+
 # Documentation
 doc/api
 doc/app
