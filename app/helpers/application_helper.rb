@@ -1,4 +1,5 @@
 module ApplicationHelper
+	include Twitter::Autolink
 
 	def color
 		if @page.white_text == true

@@ -19,7 +19,7 @@
 
 			<div class="container" id="social-section" style="border-top:1px solid #121212;">
 <div class="row">
-	<div class="span5" style="margin-top:20px;">
+	<div class="span4" style="margin-top:10px;">
 		<div class="span6 pull-left">
     		<h3>Get the long form of our story.</h3>
     		<form class="form-inline" action="http://metre.createsend.com/t/t/s/vhrht/" method="post" id="subForm">
@@ -30,11 +30,26 @@
 		
 
 	</div>
-	<div class="span6 pull-right"><%= render :partial => '/refinery/menu', :locals => { 
-	:roots => refinery_menu('social'),
-	:dom_id => 'stuff' } %>
-  </div>
 
+<div class="row">
+  <div class="span7 pull-right blockquote">
+   
+    <div class="row pull-right" id="social-section" style="margin-top:20px;">
+    	<% cache do %>
+		<% tweet = Twitter.favorites('mostlymostly', count:4) %>
+		<% @sample = tweet.to_a.sample %>
+	      <div class="span1">
+	      	<%#= image_tag 'http://placehold.it/73x73', style: 'margin-top:5px;'%>	
+	      	<%= image_tag @sample[:profile_image_url], style: 'margin-top:5px;' %>
+	      </div>
+	      <div class="span5"><blockquote><p>
+	      	<!-- This looks amazing. Remote pair programming with native editors support https://t.co/YJ7Jp3F4u0 -->
+	      	<%= auto_link(@sample[:text]).html_safe %>
+	      </p></blockquote></div>
+	    <% end %>
+    </div>
+  </div>
+</div>
 
 </div>
 
