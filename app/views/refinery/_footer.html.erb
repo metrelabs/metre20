@@ -43,8 +43,9 @@
 	      	<%= image_tag @sample[:profile_image_url], style: 'margin-top:5px;' %>
 	      </div>
 	      <div class="span5"><blockquote><p>
-	      	<!-- This looks amazing. Remote pair programming with native editors support https://t.co/YJ7Jp3F4u0 -->
 	      	<%= auto_link(@sample[:text]).html_safe %>
+	      
+	      	<small><%= link_to "#{(@sample[:user][:name])} - @#{(@sample[:user][:screen_name])}", "http://www.twitter.com/#{(@sample[:user][:screen_name])}" %></small>
 	      </p></blockquote></div>
 	    <% end %>
     </div>
