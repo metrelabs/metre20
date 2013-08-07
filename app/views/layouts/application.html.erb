@@ -34,7 +34,9 @@
 
 
       <section id="page" class="container" style="padding-bottom:100px;">
+        <div class="row">
         <%= yield %>
+      </div>
       </section>
 
       
@@ -65,7 +67,7 @@ var $ = jQuery.noConflict();
 
 $(document).ready(function() {
  $('#myCarousel').carousel({
-       interval: 2000,
+       interval: 5000,
           cycle: true
  });
 });

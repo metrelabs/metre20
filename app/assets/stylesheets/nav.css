@@ -8,5 +8,5 @@
 .nav-collapse {margin-top:10px!important;}
 .collapse {margin-top:10px!important;background-color:#000000;}
 .navbar-inverse .btn-navbar {margin-top:20px;margin-bottom:12px;}
-.brand {background:url('brand-sprites.png') 0 -353px no-repeat;width:40px;height:21px;padding:none;margin-top:4px;margin-left:11px !important;}
+.brand {background:url('brand-sprites.png') 0 -353px no-repeat;width:40px;height:21px;padding:none;margin-top:4px;margin-left:11px !important;}/* margin-left:11px !important; */
 h1#logo {text-indent:-9999px;}

@@ -19,7 +19,7 @@
   	<% @page.images.each_with_index do |image, index| %>
 	    <div class="item <% if index == 0 %>active<% end %>">
 
-	    	<%= link_to image_tag(image.thumbnail("900x600").url), image.thumbnail("900x600").url %>
+	    	<%= image_tag(image.thumbnail("900x600").url) %>
 	    	<div class="work-images" style=""><span class='caption' style="color:#ffffff;"><%=raw @page.caption_for_image_index(index) %></span></div>
 
 	    </div>
@@ -46,7 +46,5 @@
 	  <%= raw @page.content_for(:column_3) %>
 	</div>
 </div>
-
-
 
 
