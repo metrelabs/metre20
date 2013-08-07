@@ -43,17 +43,20 @@ body {padding-right:0 !important;padding-left:0 !important;}
 
 
 
+
 #top {background-color:#000000;height:70px;background-image:url('bg-top.png') repeat-x 0 0;position:relative;top:0;left:0;z-index:-1;}
 .navbar-inverse .navbar-inner {background-color:#000000 !important;padding-bottom:0 !important;}
 
 
 h1, h2, h3 {color:#000000;font-family:'ITCLubalinGraphW01-XLt', serif !important;line-height:1.15em;margin-top:2em;}
 h1, h1#body_content_title {font-family:'ITCLubalinGraphW01-XLt', serif !important;font-size:38px !important;margin-top:1em;}
-.home h1 {margin-left:-42px;font-weight:100 !important;font-size:30px !important;font-family:arial/*font-family:'ITCLubalinGraphW01-Bk'*/, sans-serif !important;text-align:center;line-height:1.15em;margin-bottom:1em;margin-top:1em;font-weight:100;}
-.home.lead {color:#000000;font-size:20px;line-height: 1.25em;margin-left:205px;}
+.home h1 {font-weight:100 !important;font-size:30px !important;font-family:arial/*font-family:'ITCLubalinGraphW01-Bk'*/, sans-serif !important;text-align:center;line-height:1.15em;margin-bottom:1em;margin-top:1em;font-weight:100;}
+/*margin-left:-42px;*/
+.home.lead {color:#000000;font-size:20px;line-height: 1.25em;}/*margin-left:205px;*/
 
 .lead {color:#000000;font-size:16px !important;line-height: 1.25em !important;}
 .white_text {color:#ffffff !important;}
+.l2 {padding:0;}
 .l2 h1 {font-size:72px;line-height: 1.15em;margin-top:1em;}
 .l2 h1 em {font-style: italic;}
 #say-metre {font-family:Times, serif !important;}
@@ -62,6 +65,7 @@ strong.larger {font-size:18px;color:#b9dba0;}
 p {margin-bottom:1.25em !important;}
 /*.span3 {border:1px solid red;}*/
 .span4 {margin-right:0 !important;}
+.span4 p {font-size:12px;}
 .row {margin-left:0px !important;}
 
 

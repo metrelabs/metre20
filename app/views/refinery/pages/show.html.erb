@@ -1,12 +1,16 @@
-<div class="l2 <%= color %> <%= span_class %> <%= offset_value %>">
-	<%= raw @page.content_for(:l2_headline) %>
+<div class="row-fluid">
+  <div class="l2 <%= color %> <%= span_class %> <%= offset_value %>">
+  	<%= raw @page.content_for(:l2_headline) %>
+  </div>
 </div>
-<div class="l2 lead <%= color %> <%= span_class %> <%= offset_value %>">
-  <%= raw @page.content_for(:l2_lead_text) %>
+<div class="row-fluid">
+  <div class="l2 lead <%= color %> <%= span_class %> <%= offset_value %>">
+    <%= raw @page.content_for(:l2_lead_text) %>
+  </div>
 </div>
 
 
-
+<div class="row-fluid">
 <% if @page.images.any? %>
 <div id="myCarousel" class="carousel slide span8">
   <ol class="carousel-indicators">
@@ -30,10 +34,11 @@
   <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 <% end %>
+</div>
 
 
-
-<div class="row <%= span_class %> <%= offset_value %>">
+<div class="row-fluid">
+<div class="<%= span_class %> <%= offset_value %>">
 	<div class="l2 <%= color %> <%= col_span %>">
 	  <%= raw @page.content_for(:column_1) %>
 	</div>
@@ -46,5 +51,10 @@
 	  <%= raw @page.content_for(:column_3) %>
 	</div>
 </div>
+</div>
+
+
+
+
 
 
