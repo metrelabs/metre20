@@ -11,8 +11,11 @@
 
 		  <div class="span6 pull-right">
 				<%= render :partial => '/refinery/menu', :locals => { 
-           :roots => refinery_menu('footer_menu') } %>
+           :roots => refinery_menu('footer_menu'),
+           :menu_name => 'footer' } %>
       </div>
+
+      <%#= roots %>
 
 
 			</div>

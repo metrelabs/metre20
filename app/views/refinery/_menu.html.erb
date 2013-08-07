@@ -9,16 +9,14 @@
 <nav id='<%= dom_id %>' class='<%= css %>'>
 
   <!-- responsive menu collaps -->
-  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="<%= "#" + menu_name %>">
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
 
-  <div class="nav-collapse collapse" style="">
+  <div class="nav-collapse collapse" id="<%= menu_name %>" style="">
   <ul class="nav pull-right">
-
-    
 
     <%= render :partial => '/refinery/menu_branch', :collection => roots,
                :locals => {
@@ -27,6 +25,7 @@
                  :menu_levels => local_assigns[:menu_levels],
                  :apply_css => true #if you don't care about class='first' class='last' or class='selected' set apply_css to false for speed.
                } -%>
+
   </ul>
 </div>
 </nav>

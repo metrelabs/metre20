@@ -12,7 +12,8 @@
            }) %>
 
       <%= render :partial => "/refinery/menu", :locals => {
-      :roots => refinery_menu("main_menu")
+      :roots => refinery_menu("main_menu"),
+      :menu_name => "main_menu" #to provide an id for nav-collapse
     } %>
 
     </div>

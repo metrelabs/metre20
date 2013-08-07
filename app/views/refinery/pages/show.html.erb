@@ -13,7 +13,7 @@
 <div class="row-fluid">
 <% if @page.images.any? %>
 <div id="myCarousel" class="carousel slide span8">
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators hidden-phone">
   	<% @page.images.each_with_index do |image, index| %>
     	<li data-target="#myCarousel" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
     <% end %>
@@ -30,8 +30,8 @@
     <% end %>
   </div>
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  <a class="carousel-control left hidden-phone" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right hidden-phone" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
 <% end %>
 </div>
