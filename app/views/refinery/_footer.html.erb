@@ -38,18 +38,19 @@
   <div class="span7 pull-right blockquote">
    
     <div class="row pull-right" id="social-section" style="margin-top:20px;">
-    	<!--
+    	
     	<%# cache(:key => 'twits', :expires_in => 1.hour) do %>
-		<%# tweet = Twitter.favorites('metreagency', count:4) %>
-		<%# @sample = tweet.to_a.sample %>
+    	<% cache "Twits#{Date.today}" do %>
+		<% tweet = Twitter.favorites('metreagency', count:4) %>
+		<% @sample = tweet.to_a.sample %>
 	      <div class="span1">
-	      	<%#= image_tag @sample[:profile_image_url], style: 'margin-top:5px;' %>
+	      	<%= image_tag @sample[:profile_image_url], style: 'margin-top:5px;' %>
 	      </div>
 	      <div class="span5"><blockquote><p>
-	      	<%#= auto_link(@sample[:text]).html_safe %>
-	      	<small><%#= link_to "#{(@sample[:user][:name])} - @#{(@sample[:user][:screen_name])}", "http://www.twitter.com/#{(@sample[:user][:screen_name])}" %></small>
+	      	<%= auto_link(@sample[:text]).html_safe %>
+	      	<small><%= link_to "#{(@sample[:user][:name])} - @#{(@sample[:user][:screen_name])}", "http://www.twitter.com/#{(@sample[:user][:screen_name])}" %></small>
 	      </p></blockquote></div>
-	    <%# end %>-->
+	    <% end %>
     </div>
   </div>
 </div>
