@@ -44,12 +44,21 @@
     	<% show_tweet = tweet.to_a.sample %>
 
     	<div class="span1">
-	      	<%#= image_tag @sample[:profile_image_url], style: 'margin-top:5px;' %>
+    		<%#= show_tweet.user %>
+    		<%= image_tag show_tweet.profile_image_url, :width => 73 %>
+	      	<%= show_tweet.screen_name %>
+	      	<%#= show_tweet.tweet_id %>
+	      	
 	      </div>
 
     	<div class="span5"><blockquote><p>
     	<%= auto_link(show_tweet.content).html_safe %>
     	</p></blockquote></div>
+
+    	<%# tweet.each do |t| %>
+    		<%#= t.profile_image_url %>
+
+    	<%# end %>
   
 	    
     </div>
