@@ -48,9 +48,9 @@ body {padding-right:0 !important;padding-left:0 !important;}
 .navbar-inverse .navbar-inner {background-color:#000000 !important;padding-bottom:0 !important;}
 
 
-h1, h2, h3 {color:#000000;font-family:'ITCLubalinGraphW01-XLt', serif !important;line-height:1.15em;margin-top:2em;}
-h1, h1#body_content_title {font-family:'ITCLubalinGraphW01-XLt', serif !important;font-size:38px !important;margin-top:1em;}
-.home h1 {font-weight:100 !important;font-size:30px !important;font-family:arial/*font-family:'ITCLubalinGraphW01-Bk'*/, sans-serif !important;text-align:center;line-height:1.15em;margin-bottom:1em;margin-top:1em;font-weight:100;}
+h1, h2, h3 {color:#000000;font-family:arial, sans-serif !important;line-height:1.15em;margin-top:2em;font-weight:100 !important;}
+h1, h1#body_content_title {font-family:arial, sans-serif !important;font-size:38px !important;margin-top:1em;}
+.home h1 {font-weight:100 !important;font-size:30px !important;font-family:arial, sans-serif !important;text-align:center;line-height:1.15em;margin-bottom:1em;margin-top:1em;font-weight:100;}
 /*margin-left:-42px;*/
 .home.lead {color:#000000;font-size:20px;line-height: 1.25em;}/*margin-left:205px;*/
 
