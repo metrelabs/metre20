@@ -1,5 +1,5 @@
 class TweetFav < ActiveRecord::Base
-  attr_accessible :content, :screen_name, :tweet_id, :user
+  attr_accessible :content, :screen_name, :tweet_id
 
   def self.pull_tweets
   	Twitter.favorites("metreagency", count:4).each do |tweet|
@@ -7,10 +7,13 @@ class TweetFav < ActiveRecord::Base
   			create!(
   				tweet_id: tweet.id,
   				content: tweet.text,
-  				screen_name: tweet.user.screen_name,
-  				user: tweet.user
+  				screen_name: tweet.user.screen_name
+  				#user: tweet.user
   		)
   		end
   	end
   end
+
+  
+  
 end

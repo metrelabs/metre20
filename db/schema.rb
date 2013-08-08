@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130808025159) do
+ActiveRecord::Schema.define(:version => 20130808034600) do
 
   create_table "refinery_blog_categories", :force => true do |t|
     t.string   "title"
@@ -299,6 +299,15 @@ ActiveRecord::Schema.define(:version => 20130808025159) do
 
   create_table "tags", :force => true do |t|
     t.string "name"
+  end
+
+  create_table "tweet_favs", :id => false, :force => true do |t|
+    t.integer  "tweet_id",     :limit => 8
+    t.string   "twitter_name"
+    t.text     "content"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.string   "screen_name"
   end
 
 end
