@@ -45,8 +45,13 @@
 
     	<div class="span1">
     		<%#= show_tweet.user %>
-    		<%= image_tag show_tweet.profile_image_url, :width => 73 %>
-	      	<%= show_tweet.screen_name %>
+    		<% if show_tweet.profile_image_url.nil? %>
+    			<%= image_tag 'twitter-bird-dark-bgs.png' %>
+    			
+    		<% else %>
+    			<%= image_tag show_tweet.profile_image_url, :width => 73 %>
+    		<% end %>
+	      	<%= auto_link("@" + show_tweet.screen_name).html_safe %>
 	      	<%#= show_tweet.tweet_id %>
 	      	
 	      </div>
