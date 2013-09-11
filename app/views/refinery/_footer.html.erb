@@ -40,8 +40,8 @@
     <div class="row pull-right" id="social-section" style="margin-top:20px;">
     	
     	
-    	<% tweet = TweetFav.all %>
-    	<% show_tweet = tweet.to_a.sample %>
+    
+    	<% show_tweet = @recent_tweets.to_a.sample %>
 
     	<div class="span1">
     		<%#= show_tweet.user %>
