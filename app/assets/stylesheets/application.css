@@ -70,7 +70,7 @@ p {margin-bottom:1.25em !important;}
 
 .people {}
 .people img {display:block;float:left;margin-right:40px;margin-bottom:3em;}
-.people .row-fluid {margin-bottom:30px !important;padding-top:30px;border-top:1px solid #fff;}
+.people .row-fluid {margin-bottom:30px !important;padding-top:30px;border-top:1px dotted #fff;}
 .people p a {color:#ffffff;margin-top:2em;display:block;}
 
 
